@@ -1,3 +1,4 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ body {
   width: 100%;
 }
 
+/* Logo */
 #logo {
   width: 150px;
   height: auto;
@@ -20,20 +22,7 @@ body {
   margin: 0 auto;
 }
 
-header {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#navbar .theme {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
-  font-weight: 50;
-  color: #a58c40;
-  margin-top: 5px;
-  left: 5%;
-}
-
+/* Navbar */
 #navbar {
   background-color: #333;
   color: white;
@@ -49,6 +38,15 @@ header {
 #navbar header {
   font-size: 1.8em;
   margin-bottom: 1em;
+}
+
+#navbar .theme {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: 50;
+  color: #a58c40;
+  margin-top: 5px;
+  left: 5%;
 }
 
 #navbar ul {
@@ -74,6 +72,7 @@ header {
   background-color: gray;
 }
 
+/* Main Document */
 #main-doc {
   padding: 2em;
   background: white;
@@ -110,6 +109,28 @@ header {
   margin-bottom: 1em;
 }
 
+/* Curriculum Section */
+#Curriculum img {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  border: 3px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#Curriculum p {
+  text-align: left; 
+  font-size: 1.2em;
+  word-wrap: break-word;
+  white-space: normal;
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Media Query for Responsiveness */
 @media (max-width: 768px) {
   #navbar ul {
     flex-direction: column;
@@ -118,6 +139,7 @@ header {
 
   #main-doc {
     margin-top: 120px;
+    padding: 1em;
   }
 
   #logo {
@@ -135,5 +157,25 @@ header {
 
   #navbar {
     padding: 10px;
+  }
+
+  #Curriculum img {
+    display: block;
+    margin: 30px auto; /* Add space above and below the image */
+    width: 80%;
+    max-width: 600px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  #Curriculum header{
+    text-align: center;
+  }
+
+    #Curriculum p {
+      text-align: left; /* Maintain normal alignment */
+      font-size: 1em;   /* Slightly adjust for smaller screens */
+      margin: 10px 0;
+    
   }
 }
