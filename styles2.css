@@ -1,0 +1,237 @@
+company-name{
+    width: 100%;
+    position: relative;
+}
+.name-container{
+    width: 73.6%;
+    height: 65%;
+    position: absolute;
+    background-color: #333;
+    right: 0;
+    top: 0;
+    opacity: 85%;
+}
+.company-name h1{
+    color: #FFFFF0;
+    font-weight: 850%;
+    position: absolute;
+    right: 90px;
+    font-family: Open-sans, Tahoma;
+    text-align: center;
+}
+#hero h1{
+    padding-top: 200px;
+}
+body {
+    font-family: Raleway, sans-serif;
+    line-height: 1.6;
+    margin-top: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    width: 100vw;
+    height: 100vh;
+}
+header {
+    background: linear-gradient(
+        90deg,
+        #333,
+        #333 20%,
+        #008080 100%
+    );
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    height: 180px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+header .logo img {
+    width: 26.5%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    margin-top: 150px;
+    font-size: 1.12rem;
+    margin-right: 0px;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFF0;
+    font-weight: bold;
+    opacity: 95%;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: orangered;
+}
+#hero {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px 0;
+}
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+#email{
+    height: 45px;
+    display: block;
+    width: 44%;
+    margin-left: 25.7%;
+    margin-bottom: 5px;
+    padding-left: 55px;
+    border-radius: 8px;
+}
+.btn {
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 25%;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: #006666;
+}
+#features {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+}
+.feature-collection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.feature {
+    flex: 1;
+    margin: 20px;
+    text-align: left;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.feature .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #008080;
+}
+.feature h2 {
+    color: #008080;
+}
+#how-it-works {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+}
+.video-container iframe {
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    height: 85%;
+}
+#testimonies {
+    background-color: #008080;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    opacity: 85%;
+}
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.testimonial p {
+    font-style: italic;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+    .hero-content {
+        padding: 50px 20px;
+    }
+    .feature {
+        flex-basis: calc(50% - 40px);
+    }
+    .testimonial {
+        padding: 0 20px;
+    }
+    header .logo img{
+        z-index: -1;
+        height: 210px;
+    }
+    .name-container{
+        z-index: 1;
+    }
+     .name-container h1{
+         font-size: 174%;
+         right: 30px;
+         
+     }
+     header{
+         height: 190px;
+
+     }
+     nav ul li {
+         font-size: 0.91em;
+         margin-right: 0.66em;
+         padding: 0px;
+     }
+     #submit{
+         padding: 3px;
+height: 8% ;
+width: 45%; 
+margin-top:-0.06em;      
+     }
+     #email{
+         padding-left: 25.7px;
+         width: 75%;
+         margin-left: 2.3em;
+         height: 9%
+    
+     }
+}
