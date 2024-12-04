@@ -8,10 +8,31 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
-  padding-left:30%;
+  padding-left: 30%;
   width: 100%;
 }
 
+#logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#navbar .theme {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: 50;
+  color: #a58c40;
+  margin-top: 5px;
+  left: 5%;
+}
 
 #navbar {
   background-color: #333;
@@ -32,7 +53,7 @@ body {
 
 #navbar ul {
   list-style: none;
-  font-size: x-large;
+  font-size: large;
 }
 
 #navbar li {
@@ -51,10 +72,7 @@ body {
 #navbar .nav-link:hover {
   text-decoration: none;
   background-color: gray;
-  
-
 }
-
 
 #main-doc {
   padding: 2em;
@@ -93,19 +111,29 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
-    padding-left: 0;
-    margin-top: 260px;
-  }
-
-  #navbar {
-    position: fixed;
-    width: 100%;
-    height: auto;
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
   }
 
   #main-doc {
-    padding: 1em;
-    margin-top: 1em;
+    margin-top: 120px;
+  }
+
+  #logo {
+    max-width: 80px;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+  .theme {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #navbar {
+    padding: 10px;
   }
 }
