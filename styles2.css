@@ -143,18 +143,18 @@ nav ul li a:hover {
 }
 .video-container {
     position: relative;
-    padding-bottom: 40%;
-    padding-top: 20px;
-    height: 0;
+    padding-bottom: 45.25%;
+    padding-top: 10px;
+    height: 50%;
     overflow: hidden;
     background-color: white;
 }
 .video-container iframe {
     position: absolute;
-    left: 23%;
-    width: 55%;
-    height: 70%;
-    padding-top: 0;
+    top:25%;
+    left: 25%;
+    width:60%;
+    height: 60%;
 }
 #testimonies {
     background-color: #008080;
