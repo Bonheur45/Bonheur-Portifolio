@@ -233,32 +233,46 @@ footer {
 }
 
 @media (max-width: 480px) {
+    #welcome-section {
+        display: flex; /* Make it a flex container */
+        flex-direction: column; /* Arrange items vertically */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        height: 100vh; /* Full viewport height */
+        padding: 0 20px; /* Add padding for better appearance */
+        box-sizing: border-box; /* Include padding in height calculation */
+        text-align: center; /* Center align text */
+    }
+
     #welcome-section h1 {
-        font-size: 2em;
+        font-size: 2em; /* Adjust font size for smaller screens */
+        margin-bottom: 10px; /* Add space between heading and paragraph */
     }
 
     #welcome-section p {
-        font-size: 1em;
+        font-size: 1.2em; /* Adjust paragraph font size */
+        margin: 0;
     }
 
     .project-tile {
-        width: calc(100% - 40px);
+        width: calc(100% - 40px); /* Adjust project tile width */
     }
 
-    #projects h2, #contact h2 {
-        font-size: 1.8em;
+    #projects h2, 
+    #contact h2 {
+        font-size: 1.8em; /* Adjust headings in projects and contact sections */
     }
 
     .phone-number {
-        font-size: 1em;
+        font-size: 1em; /* Adjust phone number font size */
     }
 
     #contact .intro-text p {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Adjust contact intro paragraph size */
     }
 
     .social-links a {
-        display: block;
-        margin: 10px 0;
+        display: block; /* Stack social links vertically */
+        margin: 10px 0; /* Add spacing between links */
     }
 }
